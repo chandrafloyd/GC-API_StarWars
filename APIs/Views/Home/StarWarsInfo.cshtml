@@ -1,0 +1,27 @@
+﻿@{
+    ViewBag.Title = "StarWarsInfo";
+}
+<h2>@ViewBag.Title.</h2>
+<h3>@ViewBag.Message</h3>
+
+<h1>Star Wars</h1>
+<h2>the longest trilogy ever</h2>
+
+
+@*@*COMMENTED OUT DUE TO TASK BELOW*@
+@*<a href="/Home/ShowInfoForPlanet?ID=1">Planet 1</a>*@
+
+
+@*setting this up so it can be used as a search field*@
+@*declared this action name here need to add it as an action and view*@
+
+
+@*TASK - CHANGE THE ABOVE LINK INTO A FORM WITH A SEARCH BOX*@
+
+
+
+    <form action="/Home/ShowPlanetInfo" method="get">    @*next go and create view called "ShowPlanetInfo"*@
+        <input type="number" name="PlanetID" placeholder="Planet ID">
+        <input type="submit" value="Search" />
+    </form>
+
